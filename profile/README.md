@@ -12,7 +12,7 @@
 
 ### Security Research Division — VampSecure Studios
 
-[![Tools](https://img.shields.io/badge/tools-21%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
+[![Tools](https://img.shields.io/badge/tools-22%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
 [![Python](https://img.shields.io/badge/python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
 [![Focus](https://img.shields.io/badge/focus-Red%20%26%20Blue%20Team-7c3aed?style=flat-square)](https://github.com/vampsecure-labs)
@@ -177,7 +177,14 @@
 </tr>
 
 <!-- ── LOGS / SIEM ─────────────────────────────────────────── -->
-<tr><td colspan="4"><sub><b>📊 LOGS & SIEM</b></sub></td></tr>
+<tr><td colspan="4"><sub><b>📊 LOGS & FORENSICS</b></sub></td></tr>
+
+<tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-log-analyzer"><b>vamp-log-analyzer</b></a></td>
+<td><code>FORENSIC</code></td>
+<td>Forensic log analyzer — 25 MITRE ATT&CK detectors, cross-source correlation (web/Linux/DB), STIX 2.1 export, chain-of-custody ZIP, behavioral baseline, stdlib-only</td>
+<td><code>FORA-NNN</code></td>
+</tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-log-hunter"><b>vamp-log-hunter</b></a></td>
