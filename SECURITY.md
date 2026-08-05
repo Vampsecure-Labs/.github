@@ -36,7 +36,7 @@
 
 If you find a vulnerability in any VampSecure Labs tool — code execution, credential exposure, unsafe defaults, or any behavior that could harm users running these tools — please report it privately:
 
-**Email:** security@vampsecurestudios.com  
+**Email:** contact@vampsecurestudios.com  
 **Subject:** `[VSL-SEC] <tool-name> — <brief description>`
 
 Include in your report:
@@ -109,7 +109,7 @@ VampSecure Labs tools are designed for authorized security assessments only. Usi
 
 Si encuentras una vulnerabilidad en alguna herramienta de VampSecure Labs — ejecución de código, exposición de credenciales, comportamientos inseguros por defecto, o cualquier comportamiento que pueda perjudicar a los usuarios — repórtala de forma privada:
 
-**Email:** security@vampsecurestudios.com  
+**Email:** contact@vampsecurestudios.com  
 **Asunto:** `[VSL-SEC] <nombre-herramienta> — <descripción breve>`
 
 Incluye en tu reporte:
