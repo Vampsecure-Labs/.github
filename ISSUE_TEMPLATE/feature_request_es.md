@@ -8,43 +8,43 @@ assignees: ''
 
 ## Herramienta
 
-<!-- ¿Qué herramienta debería mejorarse? Si es una herramienta nueva, escribe "nueva herramienta". -->
+<!-- ¿Qué herramienta mejorarías? Si es una herramienta nueva, escribe "nueva herramienta". -->
 
-## Comportamiento actual / limitación
+## Qué no puedes hacer hoy
 
-<!-- ¿Qué no puedes hacer hoy, o qué funciona mal? -->
+<!-- ¿Qué falta, o qué funciona mal? -->
 
-## Comportamiento propuesto
+## Lo que propones
 
-<!-- ¿Qué debería hacer la herramienta en su lugar? Sé lo más específico posible. -->
+<!-- ¿Qué debería hacer la herramienta? Cuanto más concreto, mejor. -->
 
-## Caso de uso
+## Caso de uso real
 
-<!-- Describe un escenario real de auditoría donde esto sería útil. -->
+<!-- Describe una situación de auditoría donde esto te vendría bien. -->
 
 ```bash
-# Ejemplo del comando o flujo de trabajo que te gustaría ejecutar
+# Ejemplo del comando que te gustaría poder ejecutar
 python3 vamp_<herramienta>.py --nuevo-flag ...
 ```
 
-## Salida esperada / sección del informe
+## Cómo debería verse la salida
 
-<!-- ¿Cómo debería verse la salida JSON o el informe HTML? Pega un ejemplo si puedes. -->
+<!-- ¿Cómo quedaría el JSON o el informe HTML? Pega un ejemplo si puedes. -->
 
-## Impacto en el schema VSL
+## ¿Cambia el formato de salida VSL?
 
-<!-- ¿Añade nuevos campos al JSON de findings? ¿Afecta a la salida de vamp-penreport? -->
+<!-- ¿Añade nuevos campos al JSON de findings? ¿Afecta a vamp-penreport? -->
 - [ ] Nuevos campos en `findings[]`
 - [ ] Nueva clave a nivel raíz en la salida
-- [ ] Cambios en la integración con vamp-penreport / vamp-orchestrator
-- [ ] Sin cambios de schema
+- [ ] Cambia la integración con vamp-penreport / vamp-orchestrator
+- [ ] No cambia nada del formato
 
-## ¿Dispuesto a contribuir?
+## ¿Te animas a contribuir?
 
-- [ ] Puedo enviar un pull request con esta funcionalidad
-- [ ] Puedo ayudar a probar una implementación
-- [ ] Solo estoy haciendo una sugerencia
+- [ ] Puedo programarlo y abrir un PR
+- [ ] Puedo ayudar con las pruebas
+- [ ] Solo es una idea, sin más
 
 ---
 
-> Todas las herramientas VSL deben producir salida JSON estándar (array `findings[]`) compatible con `vamp-orchestrator` y `vamp-penreport`. Ten esto en cuenta al proponer nuevas herramientas o campos de salida.
+> Recuerda que todas las herramientas VSL generan JSON estándar compatible con `vamp-orchestrator` y `vamp-penreport`. Tenlo en cuenta si propones nuevos campos o una herramienta nueva.

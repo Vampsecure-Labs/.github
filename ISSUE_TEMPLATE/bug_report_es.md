@@ -39,36 +39,36 @@ Sistema operativo: (uname -a o versión de Windows)
 
 ## Comando ejecutado
 
-<!-- Pega el comando exacto, eliminando objetivos o credenciales sensibles -->
+<!-- Pega el comando exacto, quitando objetivos o credenciales reales -->
 
 ```bash
 python3 vamp_<herramienta>.py ...
 ```
 
-## Comportamiento esperado
+## Qué esperabas que pasara
 
 <!-- ¿Qué debería ocurrir? -->
 
-## Comportamiento real
+## Qué pasó en realidad
 
 <!-- ¿Qué ocurre en realidad? -->
 
-## Salida de error / traza
+## Error completo
 
 ```
-Pega aquí la salida de error completa
+Pega aquí el error completo
 ```
 
-## Pasos para reproducir
+## Pasos para reproducirlo
 
 1.
 2.
 3.
 
-## Contexto adicional
+## ¿Algo más?
 
 <!-- Configuración relevante, tipo de objetivo, entorno de red, etc. -->
 
 ---
 
-> ⚠️ Si se trata de una vulnerabilidad de seguridad en la propia herramienta, no abras un issue público. Consulta [SECURITY.md](../SECURITY.md) para instrucciones de notificación privada.
+> ⚠️ Si crees que has encontrado un fallo de seguridad en la propia herramienta, no lo publiques aquí. Escríbenos en privado siguiendo lo que explica [SECURITY.md](../SECURITY.md).

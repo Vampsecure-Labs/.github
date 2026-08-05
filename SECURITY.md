@@ -34,44 +34,44 @@
 
 **Do not open a public issue for security vulnerabilities.**
 
-If you find a vulnerability in any VampSecure Labs tool — code execution, credential exposure, unsafe defaults, or any behavior that could harm users running these tools — please report it privately:
+If you find a vulnerability in any VampSecure Labs tool — code execution, credential exposure, unsafe defaults, or any behavior that could harm people running these tools — please reach out privately:
 
 **Email:** contact@vampsecurestudios.com  
 **Subject:** `[VSL-SEC] <tool-name> — <brief description>`
 
-Include in your report:
+It helps to include:
 - Tool name and version (`python3 <tool>.py --version`)
 - Python version and OS
-- A minimal reproduction case
-- Impact assessment (what an attacker could achieve)
+- A minimal way to reproduce it
+- What an attacker could actually do with this
 
 ### Response Timeline
 
 | Milestone | Target |
 |-----------|--------|
-| Acknowledgement | 72 hours |
-| Triage and severity assessment | 7 days |
-| Fix or mitigation | 30 days (critical), 90 days (others) |
-| Public disclosure | After fix is released |
+| We confirm we received it | 72 hours |
+| We assess severity | 7 days |
+| Fix or workaround | 30 days (critical), 90 days (others) |
+| Public disclosure | After the fix is out |
 
-We follow a coordinated disclosure model. Reporters who identify valid vulnerabilities will be credited in the release notes unless anonymity is requested.
+We work through coordinated disclosure. Anyone who finds a real vulnerability gets credited in the release notes — just let us know if you'd rather stay anonymous.
 
 ### Scope
 
-**In scope:**
+**We want to hear about:**
 - Logic bugs that produce false negatives (missed vulnerabilities)
 - Code execution vulnerabilities in the tools themselves
 - Hardcoded credentials or secrets in source code
 - Unsafe default behavior (e.g. running without scope validation)
 
 **Out of scope:**
-- Vulnerabilities in third-party dependencies (report to upstream)
-- Findings from running the tools against unauthorized targets
-- Theoretical vulnerabilities without a proof of concept
+- Vulnerabilities in third-party dependencies (please report those upstream)
+- Findings from running the tools against targets you don't own
+- Theoretical issues without a working proof of concept
 
 ### Legal
 
-VampSecure Labs tools are designed for authorized security assessments only. Using these tools against systems you do not own or have explicit written permission to test is illegal and outside the scope of this security policy.
+VampSecure Labs tools are for authorized security assessments only. Using them against systems you don't own or haven't been explicitly permitted to test is illegal — and outside the scope of this policy.
 
 ---
 
@@ -103,48 +103,48 @@ VampSecure Labs tools are designed for authorized security assessments only. Usi
 | vamp-icmp-shadow | ✅ Activa |
 | vamp-shellcode-lab | ✅ Activa |
 
-### Notificación de vulnerabilidades
+### Cómo avisarnos de un problema de seguridad
 
-**No abras un issue público para vulnerabilidades de seguridad.**
+**No abras un issue público si has encontrado un fallo de seguridad.**
 
-Si encuentras una vulnerabilidad en alguna herramienta de VampSecure Labs — ejecución de código, exposición de credenciales, comportamientos inseguros por defecto, o cualquier comportamiento que pueda perjudicar a los usuarios — repórtala de forma privada:
+Si encuentras algo en alguna herramienta de VampSecure Labs — ejecución de código arbitrario, credenciales expuestas, comportamientos inseguros por defecto, o cualquier cosa que pueda perjudicar a quien usa las herramientas — escríbenos en privado:
 
 **Email:** contact@vampsecurestudios.com  
 **Asunto:** `[VSL-SEC] <nombre-herramienta> — <descripción breve>`
 
-Incluye en tu reporte:
+Nos ayuda mucho si incluyes:
 - Nombre y versión de la herramienta (`python3 <tool>.py --version`)
 - Versión de Python y sistema operativo
-- Un caso de reproducción mínimo
-- Evaluación del impacto (qué podría conseguir un atacante)
+- Cómo reproducirlo (cuanto más concreto, mejor)
+- Qué daño podría causar si alguien lo aprovecha
 
-### Plazos de respuesta
+### Cuándo respondemos
 
-| Hito | Objetivo |
-|------|----------|
-| Acuse de recibo | 72 horas |
-| Triaje y evaluación de severidad | 7 días |
-| Corrección o mitigación | 30 días (crítico), 90 días (otros) |
-| Divulgación pública | Tras publicar la corrección |
+| Qué | En cuánto tiempo |
+|-----|-----------------|
+| Confirmamos que lo hemos recibido | 72 horas |
+| Lo analizamos y valoramos su gravedad | 7 días |
+| Publicamos un arreglo o solución temporal | 30 días (crítico), 90 días (otros) |
+| Lo hacemos público | Cuando el arreglo ya está disponible |
 
-Seguimos un modelo de divulgación coordinada. Los reporteros que identifiquen vulnerabilidades válidas serán mencionados en las notas de la versión, salvo que soliciten anonimato.
+Gestionamos los avisos de forma coordinada. Si encuentras algo real, te mencionamos en las notas de la versión — dinos si prefieres que no aparezca tu nombre.
 
-### Alcance
+### Qué cubrimos
 
-**En alcance:**
-- Bugs lógicos que producen falsos negativos (vulnerabilidades no detectadas)
+**Esto sí nos interesa:**
+- Bugs lógicos que hacen que la herramienta no detecte vulnerabilidades que debería detectar
 - Vulnerabilidades de ejecución de código en las propias herramientas
-- Credenciales o secretos hardcodeados en el código fuente
-- Comportamiento inseguro por defecto (p.ej. ejecución sin validación de scope)
+- Credenciales o secretos escritos directamente en el código fuente
+- Comportamientos inseguros por defecto (p.ej. ejecutarse sin validar el scope)
 
-**Fuera de alcance:**
-- Vulnerabilidades en dependencias de terceros (repórtalas al proyecto correspondiente)
-- Hallazgos obtenidos ejecutando las herramientas contra objetivos no autorizados
-- Vulnerabilidades teóricas sin prueba de concepto
+**Esto no entra:**
+- Fallos en librerías de terceros (eso hay que reportarlo al proyecto que las mantiene)
+- Resultados de usar las herramientas contra objetivos sin permiso
+- Problemas teóricos sin demostración práctica
 
-### Aviso legal
+### Uso responsable
 
-Las herramientas de VampSecure Labs están diseñadas exclusivamente para auditorías de seguridad autorizadas. Utilizarlas contra sistemas que no sean de tu propiedad o para los que no tengas permiso escrito explícito es ilegal y queda fuera del ámbito de esta política de seguridad.
+Nuestras herramientas son para auditorías con permiso expreso. Usarlas contra sistemas que no son tuyos o para los que no tienes autorización por escrito es ilegal — y queda fuera del alcance de esta política.
 
 ---
 
