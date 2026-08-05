@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: "Feature request (EN)"
 about: Suggest a new capability or improvement for a VSL tool
 title: '[FEAT] <tool-name>: <brief description>'
 labels: enhancement

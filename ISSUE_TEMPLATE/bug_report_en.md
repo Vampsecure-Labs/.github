@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: "Bug report (EN)"
 about: Something is not working correctly in one of the VSL tools
 title: '[BUG] <tool-name>: <brief description>'
 labels: bug
