@@ -12,7 +12,7 @@
 
 ### Security Research Division — VampSecure Studios
 
-[![Tools](https://img.shields.io/badge/tools-22%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
+[![Tools](https://img.shields.io/badge/tools-25%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
 [![Python](https://img.shields.io/badge/python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
 [![Focus](https://img.shields.io/badge/focus-Red%20%26%20Blue%20Team-7c3aed?style=flat-square)](https://github.com/vampsecure-labs)
@@ -108,6 +108,13 @@
 <td><code>JWT-NNN</code></td>
 </tr>
 
+<tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-graphql-audit"><b>vamp-graphql-audit</b></a> ⚡</td>
+<td><code>WEB</code></td>
+<td>GraphQL DAST — introspection detection, BOLA/IDOR fuzzing, alias DoS, injection (SQLi/SSTI/XSS), subscription abuse. Standalone CLI, no Burp required</td>
+<td><code>GQL-NNN</code></td>
+</tr>
+
 <!-- ── INFRASTRUCTURE ─────────────────────────────────────────── -->
 <tr><td colspan="4"><sub><b>🏗 INFRASTRUCTURE & CONTAINERS</b></sub></td></tr>
 
@@ -139,6 +146,13 @@
 <td><code>SEC-NNN</code></td>
 </tr>
 
+<tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-gcp-audit"><b>vamp-gcp-audit</b></a> ⚡</td>
+<td><code>CLOUD</code></td>
+<td>GCP offensive auditor — IAM/SA key age, GCS public buckets, GKE legacy ABAC, Cloud Functions secret env vars, open firewall rules, incomplete audit logging. No Google SDK required</td>
+<td><code>GCP-NNN</code></td>
+</tr>
+
 <!-- ── SECRETS / CODE ─────────────────────────────────────────── -->
 <tr><td colspan="4"><sub><b>🔑 SECRETS & CODE SECURITY</b></sub></td></tr>
 
@@ -164,6 +178,13 @@
 <td><code>AI SEC</code></td>
 <td>LLM endpoint security auditor — prompt injection, jailbreak probes, data extraction, rate limit testing</td>
 <td><code>LLM-NNN</code></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-mcp-audit"><b>vamp-mcp-audit</b></a> ⚡</td>
+<td><code>AI SEC</code></td>
+<td>MCP tool poisoning auditor — 17 prompt injection regexes, privilege escalation, data exfiltration, OWASP Agentic Top 10 mapping. First OSS tool for MCP security (200K+ vulnerable instances)</td>
+<td><code>MCP-NNN</code></td>
 </tr>
 
 <!-- ── EMAIL ─────────────────────────────────────────────────── -->
