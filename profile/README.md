@@ -176,14 +176,14 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-llm-probe"><b>vamp-llm-probe</b></a></td>
 <td><code>AI SEC</code></td>
-<td>LLM endpoint security auditor — prompt injection, jailbreak probes, data extraction, rate limit testing</td>
+<td>LLM endpoint auditor — 6 phases: recon, injection, jailbreak, extraction, access controls + <b>Phase 6 dataset red team</b> (666 real jailbreaks · 210 injection vectors · 390 forbidden questions across 13 content-policy categories)</td>
 <td><code>LLM-NNN</code></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-mcp-audit"><b>vamp-mcp-audit</b></a> ⚡</td>
 <td><code>AI SEC</code></td>
-<td>MCP tool poisoning auditor — 17 prompt injection regexes, privilege escalation, data exfiltration, OWASP Agentic Top 10 mapping. First OSS tool for MCP security (200K+ vulnerable instances)</td>
+<td>MCP tool poisoning auditor — 17 injection regexes + <b>50 real-world payload dataset</b>, privilege escalation, data exfiltration, OWASP Agentic Top 10. First OSS tool for MCP security (200K+ vulnerable instances)</td>
 <td><code>MCP-NNN</code></td>
 </tr>
 
