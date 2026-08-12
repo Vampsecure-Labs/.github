@@ -176,7 +176,7 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-llm-probe"><b>vamp-llm-probe</b></a></td>
 <td><code>AI SEC</code></td>
-<td>LLM endpoint auditor — 6 phases: recon, injection, jailbreak, extraction, access controls + <b>Phase 6 dataset red team</b> (666 real jailbreaks · 210 injection vectors · 390 forbidden questions across 13 content-policy categories)</td>
+<td>LLM endpoint auditor — 6 phases: recon, injection, jailbreak, extraction, access controls + <b>Phase 6 bilingual dataset red team</b> (666+30 jailbreaks · 210+50 injection vectors · 390 forbidden questions · <b>EN+ES native detection</b>)</td>
 <td><code>LLM-NNN</code></td>
 </tr>
 
