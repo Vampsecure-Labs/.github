@@ -12,7 +12,7 @@
 
 ### Security Research Division — VampSecure Studios
 
-[![Tools](https://img.shields.io/badge/tools-25%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
+[![Tools](https://img.shields.io/badge/tools-26%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
 [![Python](https://img.shields.io/badge/python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
 [![Focus](https://img.shields.io/badge/focus-Red%20%26%20Blue%20Team-7c3aed?style=flat-square)](https://github.com/vampsecure-labs)
@@ -48,6 +48,13 @@
 </tr>
 
 <tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-shodan-hunt"><b>vamp-shodan-hunt</b></a> ⚡</td>
+<td><code>OSINT</code></td>
+<td>Shodan OSINT exposure hunter — 4 modes: <b>CVE-exposed hosts</b>, product enumeration, org attack surface, raw query. Global exposure count, geo/org distribution, SHOD findings. No Shodan SDK required<br><sub>Cazador OSINT de exposición en Shodan — 4 modos: <b>hosts con CVE indexado</b>, enumeración de productos, superficie de ataque de org, consulta raw. Recuento global, distribución geo/org, hallazgos SHOD. Sin SDK de Shodan</sub></td>
+<td><code>SHOD-NNN</code></td>
+</tr>
+
+<tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-subdomain-takeover"><b>vamp-subdomain-takeover</b></a></td>
 <td><code>RECON</code></td>
 <td>Subdomain takeover detector — CNAME dangling, service fingerprinting, 40+ provider signatures<br><sub>Detector de subdomain takeover — CNAME colgantes, fingerprinting de servicios, 40+ firmas de proveedores</sub></td>
@@ -67,14 +74,14 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-cve-oracle"><b>vamp-cve-oracle</b></a></td>
 <td><code>VULN</code></td>
-<td>RBVM engine — NVD + CISA KEV + EPSS scoring, asset inventory, CVE-CPE correlation<br><sub>Motor RBVM — NVD + CISA KEV + puntuación EPSS, inventario de activos, correlación CVE-CPE</sub></td>
+<td>RBVM engine — NVD + CISA KEV + EPSS scoring + <b>Shodan global exposure count</b> per CVE, asset inventory, CVE-CPE correlation<br><sub>Motor RBVM — NVD + CISA KEV + EPSS + <b>recuento de exposición global Shodan</b> por CVE, inventario de activos, correlación CVE-CPE</sub></td>
 <td><code>RBVM-NNN</code></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-forticheck"><b>vamp-forticheck</b></a></td>
 <td><code>VULN</code></td>
-<td>Multi-vendor edge device scanner — FortiOS, F5 BIG-IP, Palo Alto, Cisco ASA with live CVE probes<br><sub>Escáner multi-vendor de dispositivos de borde — FortiOS, F5 BIG-IP, Palo Alto, Cisco ASA con sondas CVE en vivo</sub></td>
+<td>Multi-vendor edge device scanner — FortiOS, F5 BIG-IP, Palo Alto, Cisco ASA with live CVE probes + <b>Shodan pre-scan discovery</b> per vendor<br><sub>Escáner multi-vendor de dispositivos de borde — FortiOS, F5 BIG-IP, Palo Alto, Cisco ASA con sondas CVE en vivo + <b>descubrimiento Shodan pre-escaneo</b> por vendor</sub></td>
 <td><code>FTC-NNN</code></td>
 </tr>
 
