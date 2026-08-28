@@ -12,7 +12,7 @@
 
 ### Security Research Division — VampSecure Studios
 
-[![Tools](https://img.shields.io/badge/tools-26%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
+[![Tools](https://img.shields.io/badge/tools-27%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
 [![Python](https://img.shields.io/badge/python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
 [![Focus](https://img.shields.io/badge/focus-Red%20%26%20Blue%20Team-7c3aed?style=flat-square)](https://github.com/vampsecure-labs)
@@ -45,6 +45,13 @@
 <td><code>RECON</code></td>
 <td>Passive ASM — DNS, WHOIS, certificate transparency, GitHub dorks, Shodan OSINT, tech fingerprinting<br><sub>ASM pasivo — DNS, WHOIS, transparencia de certificados, dorks GitHub, OSINT Shodan, fingerprinting tecnológico</sub></td>
 <td><code>RECON-NNN</code></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-easm"><b>vamp-easm</b></a> ⚡</td>
+<td><code>ASM</code></td>
+<td>Continuous EASM with daily diff tracking — subdomain discovery, async port scan, TLS cert monitoring, SQLite history, webhook alerts on new assets or cert changes<br><sub>EASM continuo con seguimiento diario de cambios — descubrimiento de subdominios, escaneo de puertos async, monitorización de certificados TLS, historial SQLite, alertas webhook ante nuevos activos o cambios de cert</sub></td>
+<td><code>EASM-NNN</code></td>
 </tr>
 
 <tr>
@@ -235,7 +242,7 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-orchestrator"><b>vamp-orchestrator</b></a></td>
 <td><code>META</code></td>
-<td>Meta-tool chaining 12 VSL scanners — parallel execution, unified findings, risk score 0-100<br><sub>Meta-herramienta que encadena 12 escáneres VSL — ejecución paralela, hallazgos unificados, puntuación de riesgo 0-100</sub></td>
+<td>Meta-tool chaining 16 VSL scanners — parallel execution, unified findings, MITRE ATT&amp;CK mapping, risk score 0-100<br><sub>Meta-herramienta que encadena 16 escáneres VSL — ejecución paralela, hallazgos unificados, mapeo MITRE ATT&amp;CK, puntuación de riesgo 0-100</sub></td>
 <td>aggregator</td>
 </tr>
 
@@ -260,6 +267,11 @@ cd vamp-passive-recon && pip install -r requirements.txt
 
 # Run an audit / Ejecutar una auditoría
 python3 vamp_passive_recon.py --target example.com --report-html recon.html
+
+# Continuous attack surface monitoring / Monitorización continua de superficie de ataque
+git clone https://github.com/Vampsecure-Labs/vamp-easm
+cd vamp-easm && pip install -r requirements.txt
+python3 vamp_easm.py scan --target example.com --alert-webhook $SLACK_WEBHOOK
 
 # Orchestrate multiple tools in parallel / Orquestar múltiples herramientas en paralelo
 git clone https://github.com/Vampsecure-Labs/vamp-orchestrator
@@ -288,6 +300,10 @@ Todas las herramientas usan **códigos de salida estandarizados** para automatiz
 - name: Secret scan
   run: python3 vamp_secrets_scanner.py --path . --output secrets.json
   continue-on-error: false  # exit 2 = CRITICAL = pipeline fails
+
+# Daily EASM cron / Cron EASM diario
+- name: Attack surface diff
+  run: python3 vamp_easm.py scan --target $TARGET --alert-webhook $SLACK_WEBHOOK
 ```
 
 ---
