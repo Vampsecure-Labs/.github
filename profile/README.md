@@ -12,7 +12,7 @@
 
 ### Security Research Division — VampSecure Studios
 
-[![Tools](https://img.shields.io/badge/tools-27%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
+[![Tools](https://img.shields.io/badge/tools-31%20open%20source-dc143c?style=flat-square&logo=github)](https://github.com/vampsecure-labs)
 [![Python](https://img.shields.io/badge/python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](LICENSE)
 [![Focus](https://img.shields.io/badge/focus-Red%20%26%20Blue%20Team-7c3aed?style=flat-square)](https://github.com/vampsecure-labs)
@@ -75,6 +75,16 @@
 <td><code>CLOUD-NNN</code></td>
 </tr>
 
+<!-- ── THREAT INTELLIGENCE ────────────────────────────────────── -->
+<tr><td colspan="4"><sub><b>🕵️ THREAT INTELLIGENCE · INTELIGENCIA DE AMENAZAS</b></sub></td></tr>
+
+<tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-darkweb-intel"><b>vamp-darkweb-intel</b></a></td>
+<td><code>OSINT</code></td>
+<td>Darkweb &amp; threat intelligence CLI — multi-source IOC lookup with automatic cross-source correlation, breach exposure checks<br><sub>CLI de inteligencia de amenazas y darkweb — búsqueda de IOC multi-fuente con correlación automática entre fuentes, comprobación de exposición en filtraciones</sub></td>
+<td><code>DWI-NNN</code></td>
+</tr>
+
 <!-- ── VULNERABILITY INTELLIGENCE ─────────────────────────────── -->
 <tr><td colspan="4"><sub><b>🔬 VULNERABILITY INTELLIGENCE · INTELIGENCIA DE VULNERABILIDADES</b></sub></td></tr>
 
@@ -124,6 +134,13 @@
 </tr>
 
 <tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-oauth-audit"><b>vamp-oauth-audit</b></a></td>
+<td><code>WEB</code></td>
+<td>OAuth 2.0 and OIDC security flow auditor — PKCE, state validation, implicit flow abuse, open redirect, token analysis<br><sub>Auditor de flujos OAuth 2.0 y OIDC — validación PKCE y state, abuso de flujo implícito, redirección abierta, análisis de tokens</sub></td>
+<td><code>OAUTH-NNN</code></td>
+</tr>
+
+<tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-graphql-audit"><b>vamp-graphql-audit</b></a> ⚡</td>
 <td><code>WEB</code></td>
 <td>GraphQL DAST — introspection detection, BOLA/IDOR fuzzing, alias DoS, injection (SQLi/SSTI/XSS), subscription abuse. Standalone CLI, no Burp required<br><sub>DAST GraphQL — detección de introspección, fuzzing BOLA/IDOR, DoS por alias, inyección (SQLi/SSTI/XSS), abuso de suscripciones. CLI independiente, sin Burp</sub></td>
@@ -168,6 +185,13 @@
 <td><code>GCP-NNN</code></td>
 </tr>
 
+<tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-azure-audit"><b>vamp-azure-audit</b></a></td>
+<td><code>CLOUD</code></td>
+<td>Microsoft Azure security auditor — IAM, Storage, AKS, App Services, NSG, Key Vault, Defender. REST API only<br><sub>Auditor de seguridad Microsoft Azure — IAM, Storage, AKS, App Services, NSG, Key Vault, Defender. Solo REST API, sin SDK</sub></td>
+<td><code>AZR-NNN</code></td>
+</tr>
+
 <!-- ── SECRETS / CODE ─────────────────────────────────────────── -->
 <tr><td colspan="4"><sub><b>🔑 SECRETS &amp; CODE SECURITY · SECRETOS &amp; SEGURIDAD DE CÓDIGO</b></sub></td></tr>
 
@@ -193,6 +217,13 @@
 <td><code>AI SEC</code></td>
 <td>LLM endpoint auditor — 6 phases: recon, injection, jailbreak, extraction, access controls + <b>Phase 6 bilingual dataset red team</b> (666+30 jailbreaks · 210+50 injection vectors · 390 forbidden questions · <b>EN+ES native detection</b>)<br><sub>Auditor de endpoints LLM — 6 fases: reconocimiento, inyección, jailbreak, extracción, controles + <b>Fase 6 red team bilingüe</b> (666+30 jailbreaks · 210+50 vectores de inyección · 390 preguntas prohibidas · <b>detección nativa EN+ES</b>)</sub></td>
 <td><code>LLM-NNN</code></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/Vampsecure-Labs/vamp-llm-payloads"><b>vamp-llm-payloads</b></a></td>
+<td><code>AI SEC</code></td>
+<td>Adversarial datasets for LLM red teaming — prompt injection vectors, jailbreak sequences, forbidden question corpus (companion to vamp-llm-probe)<br><sub>Datasets adversariales para red team LLM — vectores de inyección de prompts, secuencias de jailbreak, corpus de preguntas prohibidas (complemento de vamp-llm-probe)</sub></td>
+<td>dataset</td>
 </tr>
 
 <tr>
