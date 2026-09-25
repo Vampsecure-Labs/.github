@@ -64,14 +64,14 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-subdomain-takeover"><b>vamp-subdomain-takeover</b></a></td>
 <td><code>RECON</code></td>
-<td>Subdomain takeover detector — CNAME dangling, service fingerprinting, 40+ provider signatures<br><sub>Detector de subdomain takeover — CNAME colgantes, fingerprinting de servicios, 40+ firmas de proveedores</sub></td>
+<td>Subdomain takeover detector — CNAME dangling, 40+ provider fingerprints, <b>--monitor</b> continuous DNS polling<br><sub>Detector de subdomain takeover — CNAME colgantes, 40+ firmas de proveedores, <b>--monitor</b> polling DNS continuo</sub></td>
 <td><code>SDT-NNN</code></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-cloud-enum"><b>vamp-cloud-enum</b></a></td>
 <td><code>CLOUD</code></td>
-<td>Async public bucket/blob finder — S3, Azure Blob, GCP Storage. 462+ candidate names per target<br><sub>Buscador async de buckets/blobs públicos — S3, Azure Blob, GCP Storage. 462+ nombres candidatos por objetivo</sub></td>
+<td>Async cloud storage &amp; serverless scanner — S3/Azure/GCS buckets + <b>GCP/AWS/Azure Cloud Functions</b> exposure detection (<code>--check-functions</code>)<br><sub>Escáner async de almacenamiento cloud y serverless — buckets S3/Azure/GCS + detección de exposición de <b>GCP/AWS/Azure Cloud Functions</b> (<code>--check-functions</code>)</sub></td>
 <td><code>CLOUD-NNN</code></td>
 </tr>
 
@@ -81,7 +81,7 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-darkweb-intel"><b>vamp-darkweb-intel</b></a></td>
 <td><code>OSINT</code></td>
-<td>Darkweb &amp; threat intelligence CLI — multi-source IOC lookup with automatic cross-source correlation, breach exposure checks<br><sub>CLI de inteligencia de amenazas y darkweb — búsqueda de IOC multi-fuente con correlación automática entre fuentes, comprobación de exposición en filtraciones</sub></td>
+<td>Darkweb &amp; threat intelligence CLI — multi-source IOC lookup, automatic correlation, breach checks + <b>--monitor</b> persistent daemon<br><sub>CLI de inteligencia de amenazas y darkweb — IOC multi-fuente, correlación automática, filtraciones + <b>--monitor</b> daemon de vigilancia continua</sub></td>
 <td><code>DWI-NNN</code></td>
 </tr>
 
@@ -167,7 +167,7 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-arp-sentinel"><b>vamp-arp-sentinel</b></a></td>
 <td><code>NETWORK</code></td>
-<td>ARP spoofing &amp; MITM detector — passive monitoring, gateway verification, alert on anomalies<br><sub>Detector de ARP spoofing y MITM — monitorización pasiva, verificación de gateway, alertas ante anomalías</sub></td>
+<td>ARP spoofing &amp; IPv6 NDP MITM detector — passive monitoring, gateway verification, <b>JSON output integrated with vamp-orchestrator</b><br><sub>Detector de ARP spoofing e IPv6 NDP MITM — monitorización pasiva, verificación de gateway, <b>salida JSON integrada con vamp-orchestrator</b></sub></td>
 <td><code>ARP-NNN</code></td>
 </tr>
 
@@ -198,7 +198,7 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-secrets-scanner"><b>vamp-secrets-scanner</b></a></td>
 <td><code>SAST</code></td>
-<td>Secrets &amp; sensitive data scanner — git history, 80+ patterns, CI/CD pre-commit hook, SARIF output<br><sub>Escáner de secretos y datos sensibles — historial git, 80+ patrones, hook pre-commit CI/CD, salida SARIF</sub></td>
+<td>Secrets &amp; sensitive data scanner — git history, 80+ patterns, Docker runtime, <b>Kubernetes Secrets (<code>--k8s</code>)</b>, CI/CD, SARIF<br><sub>Escáner de secretos y datos sensibles — historial git, 80+ patrones, runtime Docker, <b>Kubernetes Secrets (<code>--k8s</code>)</b>, CI/CD, SARIF</sub></td>
 <td><code>SEC-NNN</code></td>
 </tr>
 
@@ -229,7 +229,7 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-mcp-audit"><b>vamp-mcp-audit</b></a> ⚡</td>
 <td><code>AI SEC</code></td>
-<td>MCP tool poisoning auditor — 17 injection regexes + <b>50 real-world payload dataset</b>, privilege escalation, data exfiltration, OWASP Agentic Top 10. First OSS tool for MCP security (200K+ vulnerable instances)<br><sub>Auditor de envenenamiento de herramientas MCP — 17 regex de inyección + <b>dataset de 50 payloads reales</b>, escalada de privilegios, exfiltración de datos, OWASP Agentic Top 10. Primera herramienta OSS para seguridad MCP (200K+ instancias vulnerables)</sub></td>
+<td>MCP tool poisoning auditor — 17 injection regexes + 50 payload dataset, OWASP Agentic Top 10, <b>--monitor</b> continuous server polling. First OSS MCP security tool (200K+ vulnerable instances)<br><sub>Auditor de envenenamiento de herramientas MCP — 17 regex + dataset 50 payloads, OWASP Agentic Top 10, <b>--monitor</b> polling continuo de servidores. Primera herramienta OSS para seguridad MCP (200K+ instancias vulnerables)</sub></td>
 <td><code>MCP-NNN</code></td>
 </tr>
 
@@ -256,7 +256,7 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-log-hunter"><b>vamp-log-hunter</b></a></td>
 <td><code>SIEM</code></td>
-<td>IoC detector for server logs — SQLi, XSS, path traversal, webshells, brute force, scanner fingerprints<br><sub>Detector de IoC en logs de servidor — SQLi, XSS, path traversal, webshells, fuerza bruta, fingerprints de escáner</sub></td>
+<td>IoC detector for server logs — <b>--fast-mode</b> triage (&lt;5s), SQLi/XSS/webshells/brute force; distinct from vamp-log-analyzer (forensic)<br><sub>Detector de IoC en logs — <b>--fast-mode</b> triage (&lt;5s), SQLi/XSS/webshells/fuerza bruta; diferenciado de vamp-log-analyzer (forense)</sub></td>
 <td><code>LOG-NNN</code></td>
 </tr>
 
@@ -266,14 +266,14 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-penreport"><b>vamp-penreport</b></a></td>
 <td><code>REPORT</code></td>
-<td>Professional pentest report aggregator — consolidates all VSL JSON outputs into client-ready HTML/PDF<br><sub>Agregador de informes de pentest profesional — consolida todos los outputs JSON de VSL en un informe HTML/PDF listo para el cliente</sub></td>
+<td>Professional pentest report aggregator — all VSL JSON → client HTML/PDF, CVSS 3.1, Jira/Defect Dojo export, <b>custom PDF template (<code>--pdf-template</code>)</b><br><sub>Agregador de informes pentest — todos los JSON VSL → HTML/PDF cliente, CVSS 3.1, export Jira/Defect Dojo, <b>plantilla PDF personalizable (<code>--pdf-template</code>)</b></sub></td>
 <td>aggregator</td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-orchestrator"><b>vamp-orchestrator</b></a></td>
 <td><code>META</code></td>
-<td>Meta-tool chaining 16 VSL scanners — parallel execution, unified findings, MITRE ATT&amp;CK mapping, risk score 0-100<br><sub>Meta-herramienta que encadena 16 escáneres VSL — ejecución paralela, hallazgos unificados, mapeo MITRE ATT&amp;CK, puntuación de riesgo 0-100</sub></td>
+<td>Meta-tool chaining 19 VSL scanners — parallel execution, unified risk score, MITRE ATT&amp;CK mapping, <b>Telegram notifications</b> on scan completion<br><sub>Meta-herramienta que encadena 19 escáneres VSL — ejecución paralela, puntuación de riesgo unificada, mapeo MITRE ATT&amp;CK, <b>notificaciones Telegram</b> al completar</sub></td>
 <td>aggregator</td>
 </tr>
 
