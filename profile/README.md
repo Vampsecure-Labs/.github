@@ -50,7 +50,7 @@
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-easm"><b>vamp-easm</b></a> ⚡</td>
 <td><code>ASM</code></td>
-<td>Continuous EASM with daily diff tracking — subdomain discovery, async port scan, TLS cert monitoring, SQLite history, webhook alerts on new assets or cert changes<br><sub>EASM continuo con seguimiento diario de cambios — descubrimiento de subdominios, escaneo de puertos async, monitorización de certificados TLS, historial SQLite, alertas webhook ante nuevos activos o cambios de cert</sub></td>
+<td>Continuous EASM — subdomain discovery, async port scan, TLS cert monitoring, Shodan + Censys enrichment. <b>v1.5</b>: Shodan Monitor integration — persistent alerts for automatic detection of new open ports &amp; CVEs on monitored IPs (<code>monitor --setup/--check</code>)<br><sub>EASM continuo — subdominios, puertos async, TLS, enriquecimiento Shodan+Censys. <b>v1.5</b>: integración Shodan Monitor — alertas persistentes para detección automática de nuevos puertos abiertos y CVEs en IPs monitorizadas (<code>monitor --setup/--check</code>)</sub></td>
 <td><code>EASM-NNN</code></td>
 </tr>
 
@@ -299,10 +299,12 @@ cd vamp-passive-recon && pip install -r requirements.txt
 # Run an audit / Ejecutar una auditoría
 python3 vamp_passive_recon.py --target example.com --report-html recon.html
 
-# Continuous attack surface monitoring / Monitorización continua de superficie de ataque
+# Continuous attack surface monitoring + Shodan Monitor alerts / EASM continuo + alertas Shodan Monitor
 git clone https://github.com/Vampsecure-Labs/vamp-easm
 cd vamp-easm && pip install -r requirements.txt
-python3 vamp_easm.py scan --target example.com --alert-webhook $SLACK_WEBHOOK
+python3 vamp_easm.py scan --target example.com --shodan-key $SHODAN_KEY --alert-webhook $SLACK_WEBHOOK
+python3 vamp_easm.py monitor --target example.com --shodan-key $SHODAN_KEY --setup  # activate persistent alerts
+python3 vamp_easm.py monitor --target example.com --shodan-key $SHODAN_KEY --check  # check for new threats
 
 # Orchestrate multiple tools in parallel / Orquestar múltiples herramientas en paralelo
 git clone https://github.com/Vampsecure-Labs/vamp-orchestrator
