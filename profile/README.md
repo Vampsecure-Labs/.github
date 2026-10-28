@@ -72,7 +72,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-ad-recon"><b>vamp-ad-recon</b></a></td>
-<td><code>v1.2</code></td>
+<td><code>v1.4</code></td>
 <td>Active Directory security auditor — Kerberoasting, AS-REP Roasting, ACL abuse, BloodHound-compatible output, agentless LDAP<br><sub>Auditor de seguridad Active Directory — Kerberoasting, AS-REP, abuso de ACL, salida compatible con BloodHound</sub></td>
 </tr>
 
@@ -81,7 +81,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-darkweb-intel"><b>vamp-darkweb-intel</b></a></td>
-<td><code>v1.3.0</code></td>
+<td><code>v1.3.1</code></td>
 <td>Darkweb & threat intelligence CLI — multi-source IOC lookup, automatic correlation, breach checks + <code>--monitor</code> persistent daemon<br><sub>CLI de inteligencia de amenazas y darkweb — IOC multi-fuente, correlación automática, filtraciones + daemon de vigilancia</sub></td>
 </tr>
 
@@ -129,7 +129,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-waf-bypass"><b>vamp-waf-bypass</b></a></td>
-<td><code>v1.2.0</code></td>
+<td><code>v1.2.1</code></td>
 <td>WAF evasion tester — WAF fingerprinting, 15 bypass techniques (SQLi/XSS/LFI encoded), <code>--watch N</code> daemon mode, 56 tests<br><sub>Tester de evasión WAF — fingerprinting, 15 técnicas (SQLi/XSS/LFI codificados), daemon mode, 56 tests</sub></td>
 </tr>
 
@@ -147,7 +147,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-api-probe"><b>vamp-api-probe</b></a></td>
-<td><code>v1.0</code></td>
+<td><code>v1.2</code></td>
 <td>REST API DAST scanner — BOLA, BFLA, mass assignment, rate-limiting bypass, OWASP API Top 10, OpenAPI spec ingestion<br><sub>Escáner DAST REST — BOLA, BFLA, mass assignment, bypass de rate-limiting, OWASP API Top 10</sub></td>
 </tr>
 
@@ -156,7 +156,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-aws-audit"><b>vamp-aws-audit</b></a></td>
-<td><code>v1.1.0</code></td>
+<td><code>v1.1.1</code></td>
 <td>AWS security auditor — 71 CIS AWS Level 1 controls across 8 modules (IAM/S3/EC2/CloudTrail/RDS/KMS/GuardDuty/Config), SigV4 without boto3<br><sub>Auditor AWS — 71 controles CIS Level 1, 8 módulos (IAM/S3/EC2/CloudTrail/RDS/KMS/GuardDuty/Config), sin boto3</sub></td>
 </tr>
 
@@ -174,7 +174,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-iac-audit"><b>vamp-iac-audit</b></a></td>
-<td><code>v2.7.0</code></td>
+<td><code>v2.7.2</code></td>
 <td>IaC static security auditor — <b>264 checks</b> across 6 formats: Terraform, CloudFormation, Helm, Ansible, Pulumi, <b>AWS SAM/CDK</b>. YAML-driven extensible rules engine (9 rule files). CIS + MITRE ATT&CK mappings. AWS, Azure, GCP<br><sub>Auditor estático IaC — 264 checks, 6 formatos, motor YAML extensible. Brecha vs Checkov ~3.8x</sub></td>
 </tr>
 
@@ -192,7 +192,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-mobile-audit"><b>vamp-mobile-audit</b></a></td>
-<td><code>v1.0.0</code></td>
+<td><code>v1.2</code></td>
 <td>Mobile security static auditor — OWASP MASVS 2.0 checks for APK and IPA files, hardcoded secrets, SSL pinning, exported components<br><sub>Auditor estático mobile — OWASP MASVS 2.0, APK e IPA, secretos hardcodeados, SSL pinning, componentes exportados</sub></td>
 </tr>
 
@@ -207,19 +207,19 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-supply-chain"><b>vamp-supply-chain</b></a></td>
-<td><code>v1.1</code></td>
+<td><code>v1.3</code></td>
 <td>Supply chain security scanner — SBOM CycloneDX/SPDX, CVE checks via OSV.dev, typosquatting detection, SAST↔CVE cross-reference<br><sub>Escáner de cadena de suministro — SBOM CycloneDX/SPDX, CVE OSV.dev, typosquatting, cruce SAST↔CVE</sub></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-ci-audit"><b>vamp-ci-audit</b></a></td>
-<td><code>v1.2</code></td>
+<td><code>v1.3</code></td>
 <td>CI/CD pipeline security auditor — GitHub Actions, GitLab CI, Forgejo Actions: expression injection, SHA pinning, GITHUB_TOKEN permissions, fork access<br><sub>Auditor de pipelines CI/CD — expresion injection, SHA pin, permisos GITHUB_TOKEN, acceso desde forks</sub></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-compliance-check"><b>vamp-compliance-check</b></a></td>
-<td><code>v1.1</code></td>
+<td><code>v1.3</code></td>
 <td>Static multi-framework compliance auditor — ENS RD 311/2022, NIS2, ISO 27001, DORA, GDPR. Spanish/European focus, gap analysis report<br><sub>Auditor de cumplimiento multi-marco — ENS, NIS2, ISO 27001, DORA, GDPR. Enfoque español/europeo</sub></td>
 </tr>
 
@@ -234,13 +234,13 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-host-audit"><b>vamp-host-audit</b></a></td>
-<td><code>v1.15.0</code></td>
+<td><code>v1.17</code></td>
 <td>Multiplatform host hardening auditor — <b>272 checks</b>: Linux, macOS, Windows. ENS RD 311/2022 + CCN-STIC 808, NIS2, ISO 27001, DORA. SSH remote audit, YAML profiles, <code>--delta</code> diff<br><sub>Auditor de hardening multiplataforma — 272 checks Linux/macOS/Windows, ENS+CCN-STIC 808, NIS2, DORA, auditoría SSH remota</sub></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-windows-audit"><b>vamp-windows-audit</b></a></td>
-<td><code>v1.1.0</code></td>
+<td><code>v1.1.2</code></td>
 <td>Windows post-compromise security auditor — 15 CIS checks, agentless (WinRM/PowerShell), <code>--baseline</code> delta scan with NEW/RECURRING/RESOLVED badges, HTML report, 74 tests<br><sub>Auditor Windows sin agente — 15 checks CIS, delta scan NEW/RECURRING/RESOLVED, informe HTML</sub></td>
 </tr>
 
@@ -267,7 +267,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-rag-audit"><b>vamp-rag-audit</b></a></td>
-<td><code>v1.0</code></td>
+<td><code>v1.2</code></td>
 <td>RAG & agentic AI security auditor — indirect prompt injection, context poisoning, Unicode Tags smuggling, query injection, OWASP LLM Top 10<br><sub>Auditor de seguridad RAG y IA agéntica — inyección indirecta, context poisoning, Unicode Tags, OWASP LLM Top 10</sub></td>
 </tr>
 
