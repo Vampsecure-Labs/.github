@@ -66,7 +66,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-cloud-enum"><b>vamp-cloud-enum</b></a></td>
-<td><code>v1.3</code></td>
+<td><code>v1.5</code></td>
 <td>Async cloud storage & serverless scanner — S3/Azure/GCS buckets + GCP/AWS/Azure Cloud Functions exposure detection (<code>--check-functions</code>)<br><sub>Escáner async de almacenamiento cloud y serverless — buckets + Cloud Functions. No SDK requerido</sub></td>
 </tr>
 
@@ -81,7 +81,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-darkweb-intel"><b>vamp-darkweb-intel</b></a></td>
-<td><code>v1.1.0</code></td>
+<td><code>v1.3.0</code></td>
 <td>Darkweb & threat intelligence CLI — multi-source IOC lookup, automatic correlation, breach checks + <code>--monitor</code> persistent daemon<br><sub>CLI de inteligencia de amenazas y darkweb — IOC multi-fuente, correlación automática, filtraciones + daemon de vigilancia</sub></td>
 </tr>
 
@@ -96,7 +96,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-forticheck"><b>vamp-forticheck</b></a></td>
-<td><code>v2.1</code></td>
+<td><code>v1.3.0</code></td>
 <td>Multi-vendor edge device scanner — FortiOS, F5 BIG-IP, Palo Alto, Cisco ASA with live CVE probes + Shodan pre-scan discovery<br><sub>Escáner multi-vendor de dispositivos de borde — FortiOS, F5 BIG-IP, Palo Alto, Cisco ASA con sondas CVE en vivo</sub></td>
 </tr>
 
@@ -111,7 +111,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-http-audit"><b>vamp-http-audit</b></a></td>
-<td><code>v1.3.0</code></td>
+<td><code>v1.5.1</code></td>
 <td>HTTP security headers & CORS auditor — CSP, HSTS, X-Frame-Options, Referrer-Policy, Permissions-Policy<br><sub>Auditor de cabeceras de seguridad HTTP y CORS — CSP, HSTS, X-Frame-Options, Referrer-Policy</sub></td>
 </tr>
 
@@ -123,13 +123,13 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-wp2shell-audit"><b>vamp-wp2shell-audit</b></a></td>
-<td><code>v1.2</code></td>
-<td>WordPress/Joomla/Drupal security auditor — 40+ CVEs, plugin enumeration, xmlrpc abuse, WPScan API integration<br><sub>Auditor de seguridad WordPress/Joomla/Drupal — 40+ CVEs, enumeración de plugins, xmlrpc, API WPScan</sub></td>
+<td><code>v1.3</code></td>
+<td>WordPress security auditor — 40+ CVEs, plugin enumeration, xmlrpc abuse, WPScan API integration<br><sub>Auditor de seguridad WordPress — 40+ CVEs, enumeración de plugins, xmlrpc, API WPScan</sub></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-waf-bypass"><b>vamp-waf-bypass</b></a></td>
-<td><code>v1.1.0</code></td>
+<td><code>v1.2.0</code></td>
 <td>WAF evasion tester — WAF fingerprinting, 15 bypass techniques (SQLi/XSS/LFI encoded), <code>--watch N</code> daemon mode, 56 tests<br><sub>Tester de evasión WAF — fingerprinting, 15 técnicas (SQLi/XSS/LFI codificados), daemon mode, 56 tests</sub></td>
 </tr>
 
@@ -156,13 +156,13 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-aws-audit"><b>vamp-aws-audit</b></a></td>
-<td><code>v1.0.0</code></td>
+<td><code>v1.1.0</code></td>
 <td>AWS security auditor — 71 CIS AWS Level 1 controls across 8 modules (IAM/S3/EC2/CloudTrail/RDS/KMS/GuardDuty/Config), SigV4 without boto3<br><sub>Auditor AWS — 71 controles CIS Level 1, 8 módulos (IAM/S3/EC2/CloudTrail/RDS/KMS/GuardDuty/Config), sin boto3</sub></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-azure-audit"><b>vamp-azure-audit</b></a></td>
-<td><code>v1.1</code></td>
+<td><code>v1.3.0</code></td>
 <td>Microsoft Azure security auditor — RBAC, Storage ACL, Key Vault, App Service, NSG, AKS, Entra ID, Defender for Cloud<br><sub>Auditor Azure — RBAC, Storage ACL, Key Vault, App Service, NSG, AKS, Entra ID, Defender for Cloud</sub></td>
 </tr>
 
@@ -174,13 +174,13 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-iac-audit"><b>vamp-iac-audit</b></a></td>
-<td><code>v2.5.0</code></td>
+<td><code>v2.7.0</code></td>
 <td>IaC static security auditor — <b>264 checks</b> across 6 formats: Terraform, CloudFormation, Helm, Ansible, Pulumi, <b>AWS SAM/CDK</b>. YAML-driven extensible rules engine (9 rule files). CIS + MITRE ATT&CK mappings. AWS, Azure, GCP<br><sub>Auditor estático IaC — 264 checks, 6 formatos, motor YAML extensible. Brecha vs Checkov ~3.8x</sub></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-k8s-audit"><b>vamp-k8s-audit</b></a></td>
-<td><code>v3.0.0</code></td>
+<td><code>v3.2.0</code></td>
 <td>Kubernetes security auditor — RBAC, pods, network, <b>CIS Benchmark YAML engine</b> (44 checks), kube-bench wrapper, <code>--control-plane</code> flags check, <code>--delta</code> diff scan, importable package<br><sub>Auditor Kubernetes — motor YAML CIS, kube-bench, control plane, diff scan, paquete importable</sub></td>
 </tr>
 
@@ -201,8 +201,8 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-secrets-scanner"><b>vamp-secrets-scanner</b></a></td>
-<td><code>v3.0.0</code></td>
-<td>Static secrets & credentials scanner — <b>271 patterns</b> across 9 YAML rule files (cloud, AI APIs, CI/CD, SaaS, auth, payments, hardware/web3/gaming/enterprise), git history, Docker, K8s, SARIF, <code>--delta</code>, <code>--watch N</code> daemon, importable package<br><sub>Escáner de secretos — 271 patrones, 9 ficheros YAML, historial git, Docker, K8s, SARIF, diff, daemon. Paquete importable</sub></td>
+<td><code>v3.1.0</code></td>
+<td>Static secrets & credentials scanner — <b>300 patterns</b> across 9 YAML rule files (cloud, AI APIs, CI/CD, SaaS, auth, payments, hardware/web3/gaming/enterprise), git history, Docker, K8s, SARIF, <code>--delta</code>, <code>--watch N</code> daemon, importable package<br><sub>Escáner de secretos — 300 patrones, 9 ficheros YAML, historial git, Docker, K8s, SARIF, diff, daemon. Paquete importable</sub></td>
 </tr>
 
 <tr>
@@ -213,7 +213,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-ci-audit"><b>vamp-ci-audit</b></a></td>
-<td><code>v1.0</code></td>
+<td><code>v1.2</code></td>
 <td>CI/CD pipeline security auditor — GitHub Actions, GitLab CI, Forgejo Actions: expression injection, SHA pinning, GITHUB_TOKEN permissions, fork access<br><sub>Auditor de pipelines CI/CD — expresion injection, SHA pin, permisos GITHUB_TOKEN, acceso desde forks</sub></td>
 </tr>
 
@@ -291,7 +291,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-log-hunter"><b>vamp-log-hunter</b></a></td>
-<td><code>v1.3</code></td>
+<td><code>v1.4</code></td>
 <td>IoC detector for server logs — <code>--fast-mode</code> triage (&lt;5s), SQLi/XSS/webshells/brute force detection. Distinct from vamp-log-analyzer (forensic)<br><sub>Detector de IoC en logs — triage <code>--fast-mode</code> &lt;5s, SQLi/XSS/webshells/fuerza bruta. Diferente de vamp-log-analyzer</sub></td>
 </tr>
 
@@ -327,7 +327,7 @@
 
 <tr>
 <td><a href="https://github.com/Vampsecure-Labs/vamp-icmp-shadow"><b>vamp-icmp-shadow</b></a></td>
-<td><code>v1.3</code></td>
+<td><code>v1.2</code></td>
 <td>ICMP covert channel lab for Blue Team / Red Team training — educational PoC, authorized use only<br><sub>Laboratorio de canal encubierto ICMP para formación Blue/Red Team — PoC educativo, solo uso autorizado</sub></td>
 </tr>
 
@@ -434,3 +434,4 @@ Usa **[vamp-penreport](https://github.com/Vampsecure-Labs/vamp-penreport)** para
 *El uso contra sistemas sin permiso escrito explícito está prohibido.*
 
 </div>
+
